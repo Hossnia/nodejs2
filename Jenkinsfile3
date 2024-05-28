@@ -3,8 +3,7 @@ pipeline{
     stages{
         stage("sonarqube analysis"){
             steps{
-                sh 'pwd'
-                sh 'ls'
+                sh 'npm install'
             }
         }
     }
