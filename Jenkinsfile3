@@ -3,7 +3,10 @@ pipeline{
     stages{
         stage("sonarqube analysis"){
             steps{
-                sh 'npm install'
+                nodejs(nodeJSInstallationName: 'nodejs'){
+                    sh 'npm install'
+                }
+                
             }
         }
     }
