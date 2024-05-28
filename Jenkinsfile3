@@ -1,7 +1,7 @@
 pipeline{
     agent any
     stages{
-        stage("sonarqube analysis"){
+        stage("sonarqube analysis1"){
             steps{
                 nodejs(nodeJSInstallationName: 'nodejs'){
                     sh 'npm install'
